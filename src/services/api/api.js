@@ -7,6 +7,6 @@ const token =
 export const axiosInt = axios.create({
   baseURL: baseUrl,
   headers: {
-    token: token,
+    token: `Bearer ${token}`,
   },
 });

@@ -46,7 +46,7 @@ export default function CompanyListPage() {
         <table className="min-w-full border border-gray-300">
           <thead>
             <tr className="bg-blue-900 text-white">
-              <th>Sl No.</th>
+              <th className="border px-4 py-2">Sl No.</th>
               <th className="border px-4 py-2">Image</th>
               <th className="border px-4 py-2">Company Name</th>
               <th className="border px-4 py-2">First Name</th>
@@ -58,7 +58,7 @@ export default function CompanyListPage() {
           <tbody>
             {CompanyData?.docs?.map((company, inx) => (
               <tr key={company._id} className="text-center relative">
-                <td>{inx + 1}</td>
+                <td className="border px-4 py-2">{inx + 1}</td>
                 <td className="border px-4 py-2">
                   <img
                     src={company?.image?.url || null}
